@@ -1,0 +1,39 @@
+##
+## dkLab RealSync configuration file.
+##
+
+# Local directory to be realtime-replicated.
+local = C:/_/_projects/ogim_innerpages_template
+
+# Remote host to replicate to over SSH.
+host = 192.168.10.20:666
+
+# User to connect to the remote host.
+user = web
+
+# Directory at the remote host to replicate files to.
+remote = /usr/local/www/apache22/data/bitrix/templates/main_copy
+
+# Pathname wildcards to be excluded from the replication.
+# Use "*" for any filename character and "**" for any character,
+# including "/" in pathnames.
+exclude = ~*
+exclude = *.tmp
+exclude = *.pyc
+exclude = *.swp
+exclude = .git
+exclude = CVS
+exclude = .svn
+exclude = .realsync
+exclude = .cache
+exclude = .idea
+exclude = nbproject
+exclude = .realsync
+exclude = .git
+
+# To turn off "synchronization ding" sound, set the following to 1.
+nosound = 0
+
+# If you need to load some other config file from here, uncomment
+# and correct the following directive:
+#load = some_file.ini

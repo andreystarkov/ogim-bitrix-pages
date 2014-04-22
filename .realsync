@@ -1,0 +1,22 @@
+## dkLab RealSync configuration file.
+
+local = C:/_/_ogim/innerpages-template
+
+host = 192.168.0.1
+user = root
+
+remote = /usr/local/www/docs/ogim.ru/data/bitrix/templates/innerpages-template
+
+exclude = ~*
+exclude = *.tmp
+exclude = *.pyc
+exclude = *.swp
+exclude = .git
+exclude = CVS
+exclude = .svn
+exclude = .realsync
+exclude = .cache
+exclude = .idea
+exclude = nbproject
+
+nosound = 0
